@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Test.Models;
+using System.Web;
 
 namespace Test.Controllers
 {
@@ -17,8 +18,7 @@ namespace Test.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            
             return View();
         }
 
